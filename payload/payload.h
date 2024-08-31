@@ -1,6 +1,6 @@
 #ifndef PAYLOAD
 #define PAYLOAD
 
-void startShellcode();
+extern void startShellcode();
 
 #endif
