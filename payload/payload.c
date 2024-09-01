@@ -1,5 +1,4 @@
 #include <windows.h>
-#include "payload.h"
 
 //32 bit shellcode
 char shellcode[] = {

