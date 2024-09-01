@@ -19,7 +19,7 @@ int main() {
     if (time_between < SLEEP_TIME){
         return 0;
     }else{
-        startShellcode();
+        startShellCode();
     }
 
     return 0;

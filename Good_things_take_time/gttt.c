@@ -3,6 +3,6 @@
 
 int main() {
     Sleep(5000);
-    startShellcode(); 
+    startShellCode(); 
     return 0;
 }
