@@ -2,7 +2,7 @@
 Simple but effective methods to avoid being detected by antivirus
 <br><br>
 Have you ever created some software, potencionally malware, maybe something fun to prank your friends and it was always getting detected by antivirus?
-Well, this project foxuses on fixing this problem, problem of antivirus detection. First you must learn how antivirus work in order to make program that can bypass antivirus.
+Well, this project focuses on fixing this problem, problem of antivirus detection. First you must learn how antivirus work in order to make program that can bypass antivirus.
 ## Antivirus
 So, what is antivirus? It is software, that sets rules and manages your computer. It protects you from harm and malicious activity and filters applications which you can use and which are dangerous. That's something most of us already know, but how does it detect stuff? How does it knows all of this? Answer is simple, from analysis. It monitors all activity and decides if that activity should be allowed, should not be allowed or asks you when it cannot decide by rules it has defined. For example one rule can be, that any file on desktop cannot be edited by unknown application (this is called ransomware protection), and if any application tries to do so, it asks you, if you want to allow this kind of behavior. This is just one of many possible scenarios.
 ## Analysis
