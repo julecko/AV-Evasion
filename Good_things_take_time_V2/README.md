@@ -4,6 +4,6 @@ As we saw, results of previous version of this method were not very satisfying. 
 When seeing results of this method i was really supprised, in good way. With normal payload we saw decrese of 5 antiviruses, which is not gamechanging. But thats because of static analysis. Using encrypted payload we saw decrese of 15 antiviruses less from 27 to 12, which is amazing!
 ## Results
 ### Encrypted payload result
-![Encrypted](images/gttt_v2_encr.png)
+![Encrypted](/images/gttt_v2_encr.png)
 ### Normal payload result
-![Normal](images/gttt_v2.png)
+![Normal](/images/gttt_v2.png)

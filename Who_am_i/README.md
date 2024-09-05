@@ -4,6 +4,6 @@ After seeing title of this method, some of you might have tought about command o
 In an encrypted payload we can see drop of 13 from 27 to 14 antiviruses which is very close to one of the best methods. In normal payload, still not a big change but again, thats because there is static analysis flagging it as malicious.
 ## Results
 ### Encrypted payload result
-![Encrypted](images/wai_encr.png)
+![Encrypted](/images/wai_encr.png)
 ### Normal payload result
-![Normal](images/wai.png)
+![Normal](/images/wai.png)
