@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define KEY "PASS"
+#define KEY "meow"
 
 void XOR(char *data, size_t data_len, char *key, size_t key_len){
     int j = 0;
@@ -37,7 +37,7 @@ int main() {
     printf("\n");
 
     // XOR decrypt (assuming the same key for encryption and decryption)
-    XOR(shellcode, length, KEY, sizeof(KEY)-1);
+    XOR(shellcode, length, KEY, strlen(KEY));
 
     // Print decrypted shellcode
     printf("Encrypted shellcode:\n");
