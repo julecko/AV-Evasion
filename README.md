@@ -34,6 +34,6 @@ I hope you will find this repository helpful, you will learn something and mostl
 - [ScriptChildie](https://www.scriptchildie.com/)
 ## Payload Analysis Results
 ### Encrypted payload
-![Encrypted](/images/payload.png)
+![Encrypted](/images/payload_encr.png)
 ### Normal payload
-![Normal](/images/payload_encr.png)
+![Normal](/images/payload.png)
