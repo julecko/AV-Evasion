@@ -1,6 +1,4 @@
 # Introduction
-Simple but effective methods to avoid being detected by antivirus
-<br><br>
 Have you ever created some software, potencionally malware, maybe something fun to prank your friends and it was always getting detected by antivirus?
 Well, this project focuses on fixing this problem, problem of antivirus detection. First you must learn how antivirus work in order to make program that can bypass antivirus.
 
