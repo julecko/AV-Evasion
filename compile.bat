@@ -3,7 +3,7 @@
 call :check_input "%~1"
 
 :: OPTIONAL Set the path to GCC executable
-:: set GCC_PATH=C:\MinGW\bin\gcc.exe
+::set GCC_PATH=C:\MinGW\bin\gcc.exe
 set GCC_PATH=gcc
 
 :: Get the source file
@@ -22,7 +22,7 @@ if "%~2"=="-e" (
 
 :: Compile the source file
 echo Compiling %SOURCE_FILE%...
-"%GCC_PATH%" "%SOURCE_FILE%" "%PAYLOAD%" -o "%FILE_NAME%.exe"
+"%GCC_PATH%" "%SOURCE_FILE%" "%PAYLOAD%" -o "%FILE_NAME%.exe" "-lwininet"
 
 :: Check if compilation succeeded
 if %ERRORLEVEL% equ 0 (
