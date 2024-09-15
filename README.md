@@ -19,6 +19,21 @@ You probably saw this comming, another group of analysis is dynamic one. In this
 ## Running
 After you bypass theese two types of analysis and your program is succesfully running, you are mostly free to do anything. There is still behavioral analysis, which is part of dynamic analysis and it can flag and capture your program at runtime, but in most cases this analysis is not your problem and if so, evading it is a lot harder and requires harder methods of evasion which i won't be covering in this repository. You can find some of them <a href="https://www.scriptchildie.com/">here</a>
 
+## Suggested order of techniques
+1. [Good things take time](/Good_things_take_time/)
+2. [Good things take time V2](/Good_things_take_time_V2/)
+3. [Too many increments](/Too_many_increments/)
+4. [Too much to handle](/Too_much_to_handle/)
+5. [Who am I](/Who_am_i/)
+6. [Debuggable or Not](/Debuggable_or_Not/)
+7. [Weird enviroment](/Weird_Enviroment/)
+8. [Am i my own father](/Am_I_my_own_father/)
+9. [Message to the unknown](/Message_to_the_unknown/)
+
+And all of them finish with [Finale](/Finale/)
+
+You can also check [static evasion](/Static_Evasion/) which is a little more complicated
+
 ## Testing
 I have created simple payload, which executes shellcode in its memory which starts calc.exe. In images subfolder are screenshots of VirusTotal result of my programs. Default payload was detected by 32 out of 73 antiviruses. I tought, that many results might be afected because of static analysis, so for many methods i have implemented a little bit of static analysis evasion for better results. New, encrypted payload was detected by 27 out of 73 antiviruses which is still pretty high and by AV-evasion methods we will try to get this number lower.
 
