@@ -1,0 +1,9 @@
+# Am I my own father?
+This method is a little bit more complicated than other ones, but still pretty simple. When antivirus tests program in sandbox enviroments, it test for our program specifically. In sanbox, there are other programs running too, its like a little virtual machine, so antivirus focuses only our program, more exactly the process of our program started by antivirus. What we do in this method, is create a mutex and if it doesnt exists, we call ourself again. If you worked with multithreaded C/C++ applications you know what mutex is, but if you dont, let me give you simple explanation. Mutex (Mutual Exclusion Object) is unique object, used in multithreading. If our program ran some operations at once from many threads, like writing to file, we could crash our program, which we do not want. In order to dont, we use mutex, which after defining stays. It works by allocatig memory, and other threads must wait if that memory is still allocated. After program finishes we can delete mutex so we allow other threads to continue. In our example we define such a mutex, if it doesnt exists, meaning our thread is running for the first time, we will create another instance of our program. This new instance tries to create mutex with same name, but because there is already a mutex with that name, our program knows, that it was ran before and because of that it runs our payload. Using this method we run our shellcode in new instance of program which is often not monitored by antivirus.
+## Statistics
+With this method we got worst results for unecrypted payload with drop of only 1 antivirus. It probably added to static detection, so our program was detected even more often. Unlike in encrypted payload, result were even better than i expected with drop of 13 antivirus, which is amazing.
+## Results
+### Encrypted payload result
+![Encrypted](/images/aimof_encr.png)
+### Normal payload result
+![Normal](/images/aimof.png)
